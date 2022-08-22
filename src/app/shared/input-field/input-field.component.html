@@ -1,0 +1,4 @@
+  <label [attr.for]="id" class="form-label" [ngClass]="classeCssFeedback">{{ label }}</label>
+  <input [type]="type" class="form-control" [id]="id" [ngClass]="classeCss" [readonly]="!!isReadyOnly"
+    [(ngModel)]="value">
+  <app-error-msg [control]="control" [label]="label"></app-error-msg>
